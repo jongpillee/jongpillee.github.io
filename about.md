@@ -22,7 +22,7 @@ title: About me
 <p>	
 	<h4>
 		<ul>
-  			<li><a href="_posts/2017-06-05-Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms.markdown">Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms</a></li>
+  			<li><a href="https://jongpillee.github.io/research/music/auto-tagging/2017/06/05/Sample-level-Deep-Convolutional-Neural-Networks-for-Music-Auto-tagging-Using-Raw-Waveforms.html">Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms</a></li>
   		</ul>
 	</h4>
 	<h5>
@@ -35,7 +35,7 @@ title: About me
 <p>	
 	<h4>
 		<ul>
-  			<li>Multi-Level and Multi-Scale Feature Aggregation Using Pre-trained Convolutional Neural Networks for Music Auto-tagging</li>
+  			<li><a href="https://jongpillee.github.io/research/music/auto-tagging/2017/06/05/Multi-Level-and-Multi-Scale-Feature-Aggregation-Using-Pre-trained-Convolutional-Neural-Networks-for-Music-Auto-tagging.html">Multi-Level and Multi-Scale Feature Aggregation Using Pre-trained Convolutional Neural Networks for Music Auto-tagging</a></li>
   		</ul>
 	</h4>
 	<h5>
@@ -49,7 +49,7 @@ title: About me
 <p>	
 	<h4>
 		<ul>
-  			<li>The Effect of DJs’ Social Network on Music Popularity</li>
+  			<li><a href="https://jongpillee.github.io/research/edm/djs-socialnetwork/2017/06/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html">The Effect of DJs’ Social Network on Music Popularity</a></li>
   		</ul>
 	</h4>
 	<h5>
