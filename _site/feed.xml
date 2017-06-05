@@ -5,24 +5,109 @@
     <description></description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jun 2017 05:50:36 +0900</pubDate>
-    <lastBuildDate>Tue, 06 Jun 2017 05:50:36 +0900</lastBuildDate>
+    <pubDate>Tue, 06 Jun 2017 06:38:23 +0900</pubDate>
+    <lastBuildDate>Tue, 06 Jun 2017 06:38:23 +0900</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+        <description>&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/smc2017/smc1.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;We propose sample-level deep convolutional neural networks which learn representations from very small grains of waveforms (e.g. 2 or 3 samples) beyond typical frame-level input representations. In addition, we visualize filters learned in a sample-level DCNN in each layer to identify hierarchically learned features and show that they are sensitive to log-scaled frequency along layer, such as mel-frequency spectrogram that is widely used in music classification systems.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Background&lt;/strong&gt;: Learning from raw data in the image domain.
+  &lt;img src=&quot;/assets/images/smc2017/smc2.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Background&lt;/strong&gt;: Learning from raw data in the text domain.
+  &lt;img src=&quot;/assets/images/smc2017/smc3.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Background&lt;/strong&gt;: Learning from raw data in the audio domain.
+  &lt;img src=&quot;/assets/images/smc2017/smc4.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Frame-level Mel-spectrogram model&lt;/strong&gt;: Mel-spectrograms are powerful, but this process is separated from the training phase.
+  &lt;img src=&quot;/assets/images/smc2017/smc5.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Frame-level Raw waveform model&lt;/strong&gt;: Previous studies have attempted to replace the Mel-spectrogram stage with Single Large filter CNN layer.
+  &lt;img src=&quot;/assets/images/smc2017/smc6.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Sample-level Raw waveform model&lt;/strong&gt;: Let's use a deeper CNN with small filters.
+  &lt;img src=&quot;/assets/images/smc2017/smc7.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Comparison&lt;/strong&gt;: Results of three comparative models.
+  &lt;img src=&quot;/assets/images/smc2017/smc8.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Trend 1&lt;/strong&gt;: Deeper models with smaller filters increase performance.
+  &lt;img src=&quot;/assets/images/smc2017/smc9.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Trend 2&lt;/strong&gt;:  Deeper models (about 10 layers or more).
+  &lt;img src=&quot;/assets/images/smc2017/smc10.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Trend 3&lt;/strong&gt;: 1-5 seconds network input.
+  &lt;img src=&quot;/assets/images/smc2017/smc11.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Convolution operation.
+  &lt;img src=&quot;/assets/images/smc2017/smc12.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Loss is set to target filter to maximize the activation of the estimated filter shape.
+  &lt;img src=&quot;/assets/images/smc2017/smc13.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Add the back-propagated value to input noise.
+  &lt;img src=&quot;/assets/images/smc2017/smc14.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Repeat several steps.
+  &lt;img src=&quot;/assets/images/smc2017/smc15.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Run the same steps for different filters.
+  &lt;img src=&quot;/assets/images/smc2017/smc16.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: The filter shape estimate is obtained at the input signal.
+  &lt;img src=&quot;/assets/images/smc2017/smc17.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Filter Visualization&lt;/strong&gt;: To show the spectrums effectively, we use typical frame-size input (e.g. 729 samples).
+  &lt;img src=&quot;/assets/images/smc2017/smc18.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Filter Visualization&lt;/strong&gt;: We can see that they are sensitive to log-scaled frequency
+along layer, such as mel-frequency spectrogram that is widely used in music classification systems.
+  &lt;img src=&quot;/assets/images/smc2017/smc19.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://arxiv.org/abs/1703.01789&quot;&gt;paper&lt;/a&gt; for more info.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 05 Jun 2017 20:42:00 +0900</pubDate>

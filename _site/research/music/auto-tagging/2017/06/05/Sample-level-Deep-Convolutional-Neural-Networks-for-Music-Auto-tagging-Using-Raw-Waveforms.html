@@ -58,18 +58,103 @@
         <!-- <h1 class="post-title">Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms</h1> -->
 
         <section class="post-content">
-            <p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+            <p align="center">
+  <img src="/assets/images/smc2017/smc1.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+<p>We propose sample-level deep convolutional neural networks which learn representations from very small grains of waveforms (e.g. 2 or 3 samples) beyond typical frame-level input representations. In addition, we visualize filters learned in a sample-level DCNN in each layer to identify hierarchically learned features and show that they are sensitive to log-scaled frequency along layer, such as mel-frequency spectrogram that is widely used in music classification systems.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p align="center">
+<strong>Background</strong>: Learning from raw data in the image domain.
+  <img src="/assets/images/smc2017/smc2.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></figure>
+<p align="center">
+<strong>Background</strong>: Learning from raw data in the text domain.
+  <img src="/assets/images/smc2017/smc3.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll’s GitHub repo</a>.</p>
+<p align="center">
+<strong>Background</strong>: Learning from raw data in the audio domain.
+  <img src="/assets/images/smc2017/smc4.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Frame-level Mel-spectrogram model</strong>: Mel-spectrograms are powerful, but this process is separated from the training phase.
+  <img src="/assets/images/smc2017/smc5.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Frame-level Raw waveform model</strong>: Previous studies have attempted to replace the Mel-spectrogram stage with Single Large filter CNN layer.
+  <img src="/assets/images/smc2017/smc6.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Sample-level Raw waveform model</strong>: Let's use a deeper CNN with small filters.
+  <img src="/assets/images/smc2017/smc7.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Comparison</strong>: Results of three comparative models.
+  <img src="/assets/images/smc2017/smc8.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Trend 1</strong>: Deeper models with smaller filters increase performance.
+  <img src="/assets/images/smc2017/smc9.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Trend 2</strong>:  Deeper models (about 10 layers or more).
+  <img src="/assets/images/smc2017/smc10.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Trend 3</strong>: 1-5 seconds network input.
+  <img src="/assets/images/smc2017/smc11.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Gradient Ascent Method</strong>: Convolution operation.
+  <img src="/assets/images/smc2017/smc12.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Gradient Ascent Method</strong>: Loss is set to target filter to maximize the activation of the estimated filter shape.
+  <img src="/assets/images/smc2017/smc13.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Gradient Ascent Method</strong>: Add the back-propagated value to input noise.
+  <img src="/assets/images/smc2017/smc14.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Gradient Ascent Method</strong>: Repeat several steps.
+  <img src="/assets/images/smc2017/smc15.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Gradient Ascent Method</strong>: Run the same steps for different filters.
+  <img src="/assets/images/smc2017/smc16.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Gradient Ascent Method</strong>: The filter shape estimate is obtained at the input signal.
+  <img src="/assets/images/smc2017/smc17.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Filter Visualization</strong>: To show the spectrums effectively, we use typical frame-size input (e.g. 729 samples).
+  <img src="/assets/images/smc2017/smc18.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p align="center">
+<strong>Filter Visualization</strong>: We can see that they are sensitive to log-scaled frequency
+along layer, such as mel-frequency spectrogram that is widely used in music classification systems.
+  <img src="/assets/images/smc2017/smc19.jpeg" alt="Sample-level" style="width: 700px;" />
+</p>
+
+<p>Check out the <a href="https://arxiv.org/abs/1703.01789">paper</a> for more info.</p>
 
 
         </section>
