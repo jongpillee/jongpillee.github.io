@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "DJs network!"
+title:  "The Effect of DJs’ Social Network on Music Popularity"
 date:   2017-06-05 11:40:00
-categories: Research Music-Auto-Tagging
+categories: Research EDM DJs-SocialNetwork
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

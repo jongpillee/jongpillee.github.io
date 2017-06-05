@@ -22,7 +22,7 @@ title: About me
 <p>	
 	<h4>
 		<ul>
-  			<li>Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms</li>
+  			<li><a href="_posts/2017-06-05-Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms.markdown">Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms</a></li>
   		</ul>
 	</h4>
 	<h5>
