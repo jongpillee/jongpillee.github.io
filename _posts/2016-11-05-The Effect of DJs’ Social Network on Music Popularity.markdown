@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Multi-Level and Multi-Scale Feature Aggregation Using Pre-trained Convolutional Neural Networks for Music Auto-tagging"
-date:   2017-06-05 11:41:00
-categories: Research Music Auto-Tagging
+title:  "The Effect of DJs’ Social Network on Music Popularity"
+date:   2016-11-05 11:40:00
+categories: Research EDM DJs-SocialNetwork
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
