@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jun 2017 04:58:55 +0900</pubDate>
-    <lastBuildDate>Tue, 06 Jun 2017 04:58:55 +0900</lastBuildDate>
+    <pubDate>Tue, 06 Jun 2017 05:50:36 +0900</pubDate>
+    <lastBuildDate>Tue, 06 Jun 2017 05:50:36 +0900</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -40,18 +40,97 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
     
       <item>
         <title>Multi-Level and Multi-Scale Feature Aggregation Using Pre-trained Convolutional Neural Networks for Music Auto-tagging</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+        <description>&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/spl2017/spl1.png&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;Music auto-tagging is often handled in a similar manner to image classification by regarding the 2D audio spectrogram as image data. However, music auto-tagging is distinguished from image classification in that the tags are highly diverse and have different levels of abstractions. Considering this issue, we propose a convolutional neural networks (CNN)-based Feature Aggregation Method that embraces multi-level and multi-scaled features.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: Hierarchy in Music.
+  &lt;img src=&quot;/assets/images/spl2017/spl2.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: Music tags with various levels of abstraction.
+  &lt;img src=&quot;/assets/images/spl2017/spl3.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: Code music using CNN's last hidden layer?.
+  &lt;img src=&quot;/assets/images/spl2017/spl4.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: Let's use the intermediate layer Features.
+  &lt;img src=&quot;/assets/images/spl2017/spl5.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: We can also consider multi-scale Features by using several pre-trained CNN with different input sizes.
+  &lt;img src=&quot;/assets/images/spl2017/spl6.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Pre-training&lt;/strong&gt;: Let's make Feature extractors.
+  &lt;img src=&quot;/assets/images/spl2017/spl7.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Pre-training&lt;/strong&gt;: Let's make Feature extractors.
+  &lt;img src=&quot;/assets/images/spl2017/spl8.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Pre-training&lt;/strong&gt;: Let's make Feature extractors.
+  &lt;img src=&quot;/assets/images/spl2017/spl9.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Feature extraction&lt;/strong&gt;: To better capture local characteristics, frame-wise dimension is max-pooled to 1. After, average pooling is applied on whole segments of a song. Then, the feature size of each layer become equal to the number of filters on each layer.
+  &lt;img src=&quot;/assets/images/spl2017/spl10.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Feature extraction&lt;/strong&gt;: Another Feature Aggregation.
+  &lt;img src=&quot;/assets/images/spl2017/spl11.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Feature extraction&lt;/strong&gt;: Another Feature Aggregation in different scale.
+  &lt;img src=&quot;/assets/images/spl2017/spl12.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Rich Features&lt;/strong&gt;: Song-level Aggregated Features are now obtained.
+  &lt;img src=&quot;/assets/images/spl2017/spl13.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Classification&lt;/strong&gt;: Classify using DNNs.
+  &lt;img src=&quot;/assets/images/spl2017/spl14.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Transfer Learning&lt;/strong&gt;: Since our method consist of two stages, transfer learning is easily applied.
+  &lt;img src=&quot;/assets/images/spl2017/spl15.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Datasets&lt;/strong&gt;: MSD, Tagtraum, MTAT, GTZAN.
+  &lt;img src=&quot;/assets/images/spl2017/spl16.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Results&lt;/strong&gt;: Comparisons.
+  &lt;img src=&quot;/assets/images/spl2017/spl17.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Analysis&lt;/strong&gt;: We can see that some tags are indeed located at different levels and scales.
+  &lt;img src=&quot;/assets/images/spl2017/spl18.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;width: 700px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://arxiv.org/abs/1703.01793&quot;&gt;paper&lt;/a&gt; for more info.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 05 Mar 2017 20:41:00 +0900</pubDate>
@@ -70,68 +149,68 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
       <item>
         <title>The Effect of DJs’ Social Network on Music Popularity</title>
         <description>&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/djs/djs(14).jpeg&quot; alt=&quot;DJ figure14&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(14).jpeg&quot; alt=&quot;DJ figure14&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 &lt;p&gt;This research focuses on two distinctive determinants of DJ popularity in Electronic Dance Music (EDM) culture. While one’s individual artistic tastes (Audio Features) influence the construction of playlists for festivals, social relationships (Social Network) with other DJs also have an effect on the promotion of a DJ’s works.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Motivation&lt;/strong&gt;: There are many aspects that affect when DJs construct Mix Sets.
-  &lt;img src=&quot;/assets/images/djs/djs(1).jpeg&quot; alt=&quot;DJ figure1&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(1).jpeg&quot; alt=&quot;DJ figure1&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Motivation&lt;/strong&gt;: What are the factors that affect when DJs chooses a song?.
-  &lt;img src=&quot;/assets/images/djs/djs(3).jpeg&quot; alt=&quot;DJ figure3&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(3).jpeg&quot; alt=&quot;DJ figure3&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Hypothesis&lt;/strong&gt;: Audio Features &amp;amp; Social Network.
-  &lt;img src=&quot;/assets/images/djs/djs(4).jpeg&quot; alt=&quot;DJ figure4&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(4).jpeg&quot; alt=&quot;DJ figure4&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Dataset&lt;/strong&gt;: &lt;a href=&quot;https://www.1001tracklists.com/&quot;&gt;1001TRACKLISTS&lt;/a&gt;.
-  &lt;img src=&quot;/assets/images/djs/djs(6).jpeg&quot; alt=&quot;DJ figure6&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(6).jpeg&quot; alt=&quot;DJ figure6&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Popularity&lt;/strong&gt;: Popularity is calculated according to DJ's song preference.
-  &lt;img src=&quot;/assets/images/djs/djs(2).jpeg&quot; alt=&quot;DJ figure2&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(2).jpeg&quot; alt=&quot;DJ figure2&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Models&lt;/strong&gt;: Popularity / Audio Features, Network Features.
-  &lt;img src=&quot;/assets/images/djs/djs(7).jpeg&quot; alt=&quot;DJ figure7&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(7).jpeg&quot; alt=&quot;DJ figure7&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Model 1&lt;/strong&gt;: Some audio features affect music popularity.
-  &lt;img src=&quot;/assets/images/djs/djs(9).jpeg&quot; alt=&quot;DJ figure9&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(9).jpeg&quot; alt=&quot;DJ figure9&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Model 2&lt;/strong&gt;: Song popularity has a negative relationship with Closeness and Betweness.
-  &lt;img src=&quot;/assets/images/djs/djs(10).jpeg&quot; alt=&quot;DJ figure10&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(10).jpeg&quot; alt=&quot;DJ figure10&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Model 3&lt;/strong&gt;: Even when controlling Audio Features, Closeness and Betweness still show negative relationships.
-  &lt;img src=&quot;/assets/images/djs/djs(11).jpeg&quot; alt=&quot;DJ figure11&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(11).jpeg&quot; alt=&quot;DJ figure11&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Analysis&lt;/strong&gt;: Low Betweeness &amp;amp; Closeness.
-  &lt;img src=&quot;/assets/images/djs/djs(8).jpg&quot; alt=&quot;DJ figure8&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(8).jpg&quot; alt=&quot;DJ figure8&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Analysis&lt;/strong&gt;: DJs tend to play songs composed by DJs within their exclusive groups.
-  &lt;img src=&quot;/assets/images/djs/djs(12).jpeg&quot; alt=&quot;DJ figure12&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(12).jpeg&quot; alt=&quot;DJ figure12&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;strong&gt;Example&lt;/strong&gt;: The more popular a song is, the more often the song is played within the cluster.
-  &lt;img src=&quot;/assets/images/djs/djs(13).jpeg&quot; alt=&quot;DJ figure13&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(13).jpeg&quot; alt=&quot;DJ figure13&quot; style=&quot;width: 700px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Check out the &lt;a href=&quot;https://jongpillee.github.io/assets/images/The%20effect%20of%20DJ's%20social%20networks%20on%20music%20popularity.pdf&quot;&gt;paper&lt;/a&gt; for more info.&lt;/p&gt;
