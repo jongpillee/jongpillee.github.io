@@ -1,28 +1,16 @@
-title: Jongpil Lee
-description: Jongpil Lee  
-
-url: https://jongpillee.github.io/
-baseurl: ""
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+name: Jongpil Lee
+description: #Jongpil Lee's Research Blog
+meta_description: "Jongpil Lee's Blog"
 
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
+logo: false
+paginate: 5
+baseurl: /
+domain_name: 'https://jongpillee.github.io/'
+google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
-paginate: 3
 
-navigation:
- - title: Home
-   url: /index.html
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
-
-social:
-   github: jongpillee
-   #twitter: brianmaierjr
-   #facebook: brianmaierjr
-   email: jongpillee.brian@gmail.com
-
-google_analytics: #"UA-58263416-1"
+# Details for the RSS feed generator
+url:            'https://jongpillee.github.io/'
+author:         'Jongpil Lee'
