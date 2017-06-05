@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Jongpil Lee
+description: Jongpil Lee  
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://jongpillee.github.io/
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -9,7 +9,7 @@ permalink: blog/:title/
 markdown: kramdown
 highlighter: rouge
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 3
 
 navigation:
  - title: Home
@@ -20,9 +20,9 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: jongpillee
+   #twitter: brianmaierjr
+   #facebook: brianmaierjr
+   email: jongpillee.brian@gmail.com
 
-google_analytics: "UA-58263416-1"
+google_analytics: #"UA-58263416-1"
