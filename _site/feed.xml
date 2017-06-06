@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jun 2017 06:38:23 +0900</pubDate>
-    <lastBuildDate>Tue, 06 Jun 2017 06:38:23 +0900</lastBuildDate>
+    <pubDate>Tue, 06 Jun 2017 15:09:04 +0900</pubDate>
+    <lastBuildDate>Tue, 06 Jun 2017 15:09:04 +0900</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -234,7 +234,7 @@ along layer, such as mel-frequency spectrogram that is widely used in music clas
       <item>
         <title>The Effect of DJs’ Social Network on Music Popularity</title>
         <description>&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/icmc2016/djs(14).jpeg&quot; alt=&quot;DJ figure14&quot; style=&quot;width: 700px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(14).jpeg&quot; alt=&quot;DJ figure14&quot; style=&quot;max-width: 100%;&quot; /&gt;
 &lt;/p&gt;
 &lt;p&gt;This research focuses on two distinctive determinants of DJ popularity in Electronic Dance Music (EDM) culture. While one’s individual artistic tastes (Audio Features) influence the construction of playlists for festivals, social relationships (Social Network) with other DJs also have an effect on the promotion of a DJ’s works.&lt;/p&gt;
 

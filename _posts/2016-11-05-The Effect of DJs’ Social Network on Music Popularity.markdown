@@ -6,7 +6,7 @@ categories: Research EDM DJs-SocialNetwork
 ---
 
 <p align="center">
-  <img src="/assets/images/icmc2016/djs(14).jpeg" alt="DJ figure14" style="width: 700px;">
+  <img src="/assets/images/icmc2016/djs(14).jpeg" alt="DJ figure14" style="max-width: 100%;">
 </p>
 This research focuses on two distinctive determinants of DJ popularity in Electronic Dance Music (EDM) culture. While one's individual artistic tastes (Audio Features) influence the construction of playlists for festivals, social relationships (Social Network) with other DJs also have an effect on the promotion of a DJ’s works.
 
