@@ -46,7 +46,7 @@ We propose sample-level deep convolutional neural networks which learn represent
 </p>
 
 <p align="center">
-<strong>Trend 1</strong>: Deeper models with smaller filters increase performance.
+<strong>Trend 1</strong>: Small filters with small strides of the first convolution layer.
   <img src="/assets/images/smc2017/smc9.jpeg" alt="Sample-level" style="max-width: 100%;">
 </p>
 
