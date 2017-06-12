@@ -13,11 +13,6 @@ title: About me
   <li><font color="black">2007 - 2015</font>. B.S., EE, <a href="http://www.hanyang.ac.kr/web/eng">Hanyang University</a>, Korea</li>
 </ul>
 
-<strong>Experiences</strong>
-<ul>
-  <li>2017 Summer Research Intern (Soon) at <a href="http://recruit.navercorp.com/global/recruitMain">Naver</a>, Korea</li>
-</ul>
-
 <strong>Publications</strong>
 
 <p>	
