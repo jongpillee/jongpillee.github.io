@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>Blog</description>
+    <description>Personal Blog dealing with Music and Deep Learning</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jun 2017 21:30:16 +0900</pubDate>
-    <lastBuildDate>Tue, 06 Jun 2017 21:30:16 +0900</lastBuildDate>
+    <pubDate>Tue, 20 Jun 2017 11:14:35 +0900</pubDate>
+    <lastBuildDate>Tue, 20 Jun 2017 11:14:35 +0900</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -52,7 +52,7 @@
 &lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;strong&gt;Trend 1&lt;/strong&gt;: Deeper models with smaller filters increase performance.
+&lt;strong&gt;Trend 1&lt;/strong&gt;: Small filters with small strides of the first convolution layer.
   &lt;img src=&quot;/assets/images/smc2017/smc9.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
 &lt;/p&gt;
 

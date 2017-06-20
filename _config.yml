@@ -1,6 +1,6 @@
 name: Jongpil Lee
-description:  Blog
-meta_description: "Jongpil Lee's Blog"
+description:  Personal Blog dealing with Music and Deep Learning
+meta_description: "jongpil lee music information retrieval deep learning blog"
 
 markdown: kramdown
 highlighter: pygments
@@ -14,3 +14,4 @@ gems: [jekyll-paginate]
 # Details for the RSS feed generator
 url:            'https://jongpillee.github.io/'
 author:         'Jongpil Lee'
+

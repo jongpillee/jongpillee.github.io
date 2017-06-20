@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Multi-Level and Multi-Scale Feature Aggregation Using Pre-trained Convolutional Neural Networks for Music Auto-tagging"
+title:  Multi-Level and Multi-Scale Feature Aggregation Using Pre-trained Convolutional Neural Networks for Music Auto-tagging
+description: Multi-Level and Multi-Scale Feature Aggregation Using Pre-trained Convolutional Neural Networks for Music Auto-tagging
 date:   2017-03-05 11:41:00
 categories: Research Music Auto-Tagging
 ---

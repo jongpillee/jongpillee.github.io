@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms"
+title:  Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms
+description: Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms
 date:   2017-06-05 11:42:00
 categories: Research Music Auto-Tagging
 ---

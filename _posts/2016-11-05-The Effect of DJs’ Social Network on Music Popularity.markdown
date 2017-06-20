@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "The Effect of DJs’ Social Network on Music Popularity"
+title:  The Effect of DJs’ Social Network on Music Popularity
+description: The Effect of DJs’ Social Network on Music Popularity
 date:   2016-11-05 11:40:00
 categories: Research EDM DJs-SocialNetwork
 ---
