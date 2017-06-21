@@ -6,6 +6,8 @@ title: About me
 
 <strong>Keywords: Music Information Retrieval, Deep learning</strong>
 
+<strong>Contact: jongpillee.brian (at) gmail.com</strong>
+
 <strong>Education</strong>
 <ul>
   <li><font color="red">2017 - now</font>. PhD Student, <a href="http://mac.kaist.ac.kr/">MAC Lab</a>, <a href="https://ct.kaist.ac.kr/main.php?">CT</a>, <a href="http://www.kaist.ac.kr/html/en/">KAIST</a>, Korea (Advisor: <a href="http://mac.kaist.ac.kr/~juhan/?">Juhan Nam</a>)</li>
@@ -57,5 +59,5 @@ title: About me
 
 
 <span class="image left">
-			<img src="assets/images/profile.png" title="Real Time Image Saliency for Black Box Classifiers" alt="Real Time Image Saliency for Black Box Classifiers" >
+			<img src="assets/images/profile.png" title="profile" >
 		</span>

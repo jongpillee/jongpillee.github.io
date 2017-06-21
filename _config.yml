@@ -1,6 +1,6 @@
 name: Jongpil Lee
-description:  Personal Blog dealing with Music and Deep Learning
-meta_description: "jongpil lee music information retrieval deep learning blog"
+description:  Music and Deep Learning Blog
+meta_description: 'jongpil lee music information retrieval deep learning blog'
 
 markdown: kramdown
 highlighter: pygments
@@ -15,3 +15,6 @@ gems: [jekyll-paginate]
 url:            'https://jongpillee.github.io/'
 author:         'Jongpil Lee'
 
+# personal contacts
+github_username: 'jongpillee'
+gmail_username: 'jongpillee.brian'
