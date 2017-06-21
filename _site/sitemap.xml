@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    <url>
+      <loc>http://localhost:4000/research/music/auto-tagging/2017/06/05/Sample-level-Deep-Convolutional-Neural-Networks-for-Music-Auto-tagging-Using-Raw-Waveforms.html</loc>
+      
+        <lastmod>2017-06-05T20:42:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/research/music/auto-tagging/2017/03/05/Multi-Level-and-Multi-Scale-Feature-Aggregation-Using-Pre-trained-Convolutional-Neural-Networks-for-Music-Auto-tagging.html</loc>
+      
+        <lastmod>2017-03-05T20:41:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html</loc>
+      
+        <lastmod>2016-11-05T20:40:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+</urlset>
