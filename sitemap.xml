@@ -1,29 +1,68 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
+  
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+      <loc>https://jongpillee.github.io//music/dopefeel/2017/06/25/Park-Saebyul-Sky-High-Dopefeel-Remix.html</loc>
+      
+        <lastmod>2017-06-25T20:00:00+09:00</lastmod>
+      
 
-      {% if post.sitemap.changefreq == null %}
+      
         <changefreq>weekly</changefreq>
-      {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
+      
 
-      {% if post.sitemap.priority == null %}
+      
           <priority>0.5</priority>
-      {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% endif %}
+      
 
     </url>
-  {% endfor %}
+  
+    <url>
+      <loc>https://jongpillee.github.io//research/music/auto-tagging/2017/06/05/Sample-level-Deep-Convolutional-Neural-Networks-for-Music-Auto-tagging-Using-Raw-Waveforms.html</loc>
+      
+        <lastmod>2017-06-05T20:42:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://jongpillee.github.io//research/music/auto-tagging/2017/03/05/Multi-Level-and-Multi-Scale-Feature-Aggregation-Using-Pre-trained-Convolutional-Neural-Networks-for-Music-Auto-tagging.html</loc>
+      
+        <lastmod>2017-03-05T20:41:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html</loc>
+      
+        <lastmod>2016-11-05T20:40:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
 </urlset>

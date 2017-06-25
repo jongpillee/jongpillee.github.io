@@ -1,30 +1,340 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title></title>
+    <description>Music and Deep Learning Blog</description>
+    <link>https://jongpillee.github.io///</link>
+    <atom:link href="https://jongpillee.github.io///feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 25 Jun 2017 22:17:37 +0900</pubDate>
+    <lastBuildDate>Sun, 25 Jun 2017 22:17:37 +0900</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Dopefeel | Park Saebyul - Sky High (Dopefeel Remix)</title>
+        <description>&lt;p align=&quot;center&quot;&gt;
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;&lt;div class=&quot;embed-container&quot;&gt;    &lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;//www.youtube.com/embed/a0cHdusQ6l8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;We are &lt;strong&gt;Dopefeel&lt;/strong&gt;, Doyeon Kwak and Jongpil Lee (we made the team name ‘Dopefeel’ by combining Do from Doyeon and pil from Jongpil). &lt;br /&gt;
+We are pleased to release Dopefeel’s first work. We remixed the song &lt;strong&gt;“Sky High”&lt;/strong&gt; by &lt;strong&gt;Park Saebyul&lt;/strong&gt;, a professional singer. &lt;br /&gt;
+We’d appreciate it so much if you could enjoy and share it. (Saebyul, Doyeon and I are all at Graduate School of Culture Technology, KAIST)&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 25 Jun 2017 20:00:00 +0900</pubDate>
+        <link>https://jongpillee.github.io///music/dopefeel/2017/06/25/Park-Saebyul-Sky-High-Dopefeel-Remix.html</link>
+        <guid isPermaLink="true">https://jongpillee.github.io///music/dopefeel/2017/06/25/Park-Saebyul-Sky-High-Dopefeel-Remix.html</guid>
+        
+        
+        <category>Music</category>
+        
+        <category>Dopefeel</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Sample-level Deep Convolutional Neural Networks for Music Auto-tagging Using Raw Waveforms</title>
+        <description>&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/smc2017/smc1.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;We propose sample-level deep convolutional neural networks which learn representations from very small grains of waveforms (e.g. 2 or 3 samples) beyond typical frame-level input representations. In addition, we visualize filters learned in a sample-level DCNN in each layer to identify hierarchically learned features and show that they are sensitive to log-scaled frequency along layer, such as mel-frequency spectrogram that is widely used in music classification systems.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Background&lt;/strong&gt;: Learning from raw data in the image domain.
+  &lt;img src=&quot;/assets/images/smc2017/smc2.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Background&lt;/strong&gt;: Learning from raw data in the text domain.
+  &lt;img src=&quot;/assets/images/smc2017/smc3.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Background&lt;/strong&gt;: Learning from raw data in the audio domain.
+  &lt;img src=&quot;/assets/images/smc2017/smc4.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Frame-level Mel-spectrogram model&lt;/strong&gt;: Mel-spectrograms are powerful, but this process is separated from the training phase.
+  &lt;img src=&quot;/assets/images/smc2017/smc5.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Frame-level Raw waveform model&lt;/strong&gt;: Previous studies have attempted to replace the Mel-spectrogram stage with Single Large filter CNN layer.
+  &lt;img src=&quot;/assets/images/smc2017/smc6.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Sample-level Raw waveform model&lt;/strong&gt;: Let's use a deeper CNN with small filters.
+  &lt;img src=&quot;/assets/images/smc2017/smc7.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Comparison&lt;/strong&gt;: Results of three comparative models.
+  &lt;img src=&quot;/assets/images/smc2017/smc8.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Trend 1&lt;/strong&gt;: Small filters with small strides of the first convolution layer.
+  &lt;img src=&quot;/assets/images/smc2017/smc9.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Trend 2&lt;/strong&gt;:  Deeper models (about 10 layers or more).
+  &lt;img src=&quot;/assets/images/smc2017/smc10.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Trend 3&lt;/strong&gt;: 1-5 seconds network input.
+  &lt;img src=&quot;/assets/images/smc2017/smc11.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Convolution operation.
+  &lt;img src=&quot;/assets/images/smc2017/smc12.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Loss is set to target filter to maximize the activation of the estimated filter shape.
+  &lt;img src=&quot;/assets/images/smc2017/smc13.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Add the back-propagated value to input noise.
+  &lt;img src=&quot;/assets/images/smc2017/smc14.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Repeat several steps.
+  &lt;img src=&quot;/assets/images/smc2017/smc15.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: Run the same steps for different filters.
+  &lt;img src=&quot;/assets/images/smc2017/smc16.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Gradient Ascent Method&lt;/strong&gt;: The filter shape estimate is obtained at the input signal.
+  &lt;img src=&quot;/assets/images/smc2017/smc17.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Filter Visualization&lt;/strong&gt;: To show the spectrums effectively, we use typical frame-size input (e.g. 729 samples).
+  &lt;img src=&quot;/assets/images/smc2017/smc18.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Filter Visualization&lt;/strong&gt;: We can see that they are sensitive to log-scaled frequency
+along layer, such as mel-frequency spectrogram that is widely used in music classification systems.
+  &lt;img src=&quot;/assets/images/smc2017/smc19.jpeg&quot; alt=&quot;Sample-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://arxiv.org/abs/1703.01789&quot;&gt;paper&lt;/a&gt; for more info.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 05 Jun 2017 20:42:00 +0900</pubDate>
+        <link>https://jongpillee.github.io///research/music/auto-tagging/2017/06/05/Sample-level-Deep-Convolutional-Neural-Networks-for-Music-Auto-tagging-Using-Raw-Waveforms.html</link>
+        <guid isPermaLink="true">https://jongpillee.github.io///research/music/auto-tagging/2017/06/05/Sample-level-Deep-Convolutional-Neural-Networks-for-Music-Auto-tagging-Using-Raw-Waveforms.html</guid>
+        
+        
+        <category>Research</category>
+        
+        <category>Music</category>
+        
+        <category>Auto-Tagging</category>
+        
+      </item>
+    
+      <item>
+        <title>Multi-Level and Multi-Scale Feature Aggregation Using Pre-trained Convolutional Neural Networks for Music Auto-tagging</title>
+        <description>&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/spl2017/spl1.png&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;Music auto-tagging is often handled in a similar manner to image classification by regarding the 2D audio spectrogram as image data. However, music auto-tagging is distinguished from image classification in that the tags are highly diverse and have different levels of abstractions. Considering this issue, we propose a convolutional neural networks (CNN)-based Feature Aggregation Method that embraces multi-level and multi-scaled features.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: Hierarchy in Music.
+  &lt;img src=&quot;/assets/images/spl2017/spl2.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: Music tags with various levels of abstraction.
+  &lt;img src=&quot;/assets/images/spl2017/spl3.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: Code music using CNN's last hidden layer?.
+  &lt;img src=&quot;/assets/images/spl2017/spl4.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: Let's use the intermediate layer Features.
+  &lt;img src=&quot;/assets/images/spl2017/spl5.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: We can also consider multi-scale Features by using several pre-trained CNN with different input sizes.
+  &lt;img src=&quot;/assets/images/spl2017/spl6.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Pre-training&lt;/strong&gt;: Let's make Feature extractors.
+  &lt;img src=&quot;/assets/images/spl2017/spl7.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Pre-training&lt;/strong&gt;: Let's make Feature extractors.
+  &lt;img src=&quot;/assets/images/spl2017/spl8.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Pre-training&lt;/strong&gt;: Let's make Feature extractors.
+  &lt;img src=&quot;/assets/images/spl2017/spl9.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Feature extraction&lt;/strong&gt;: To better capture local characteristics, frame-wise dimension is max-pooled to 1. After, average pooling is applied on whole segments of a song. Then, the feature size of each layer become equal to the number of filters on each layer.
+  &lt;img src=&quot;/assets/images/spl2017/spl10.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Feature extraction&lt;/strong&gt;: Another Feature Aggregation.
+  &lt;img src=&quot;/assets/images/spl2017/spl11.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Feature extraction&lt;/strong&gt;: Another Feature Aggregation in different scale.
+  &lt;img src=&quot;/assets/images/spl2017/spl12.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Rich Features&lt;/strong&gt;: Song-level Aggregated Features are now obtained.
+  &lt;img src=&quot;/assets/images/spl2017/spl13.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Classification&lt;/strong&gt;: Classify using DNNs.
+  &lt;img src=&quot;/assets/images/spl2017/spl14.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Transfer Learning&lt;/strong&gt;: Since our method consist of two stages, transfer learning is easily applied.
+  &lt;img src=&quot;/assets/images/spl2017/spl15.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Datasets&lt;/strong&gt;: MSD, Tagtraum, MTAT, GTZAN.
+  &lt;img src=&quot;/assets/images/spl2017/spl16.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Results&lt;/strong&gt;: Comparisons.
+  &lt;img src=&quot;/assets/images/spl2017/spl17.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Analysis&lt;/strong&gt;: We can see that some tags are indeed located at different levels and scales.
+  &lt;img src=&quot;/assets/images/spl2017/spl18.jpeg&quot; alt=&quot;Multi-level&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://arxiv.org/abs/1703.01793&quot;&gt;paper&lt;/a&gt; for more info.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 05 Mar 2017 20:41:00 +0900</pubDate>
+        <link>https://jongpillee.github.io///research/music/auto-tagging/2017/03/05/Multi-Level-and-Multi-Scale-Feature-Aggregation-Using-Pre-trained-Convolutional-Neural-Networks-for-Music-Auto-tagging.html</link>
+        <guid isPermaLink="true">https://jongpillee.github.io///research/music/auto-tagging/2017/03/05/Multi-Level-and-Multi-Scale-Feature-Aggregation-Using-Pre-trained-Convolutional-Neural-Networks-for-Music-Auto-tagging.html</guid>
+        
+        
+        <category>Research</category>
+        
+        <category>Music</category>
+        
+        <category>Auto-Tagging</category>
+        
+      </item>
+    
+      <item>
+        <title>The Effect of DJs’ Social Network on Music Popularity</title>
+        <description>&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/icmc2016/djs(14).jpeg&quot; alt=&quot;DJ figure14&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;This research focuses on two distinctive determinants of DJ popularity in Electronic Dance Music (EDM) culture. While one’s individual artistic tastes (Audio Features) influence the construction of playlists for festivals, social relationships (Social Network) with other DJs also have an effect on the promotion of a DJ’s works.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: There are many aspects that affect when DJs construct Mix Sets.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(1).jpeg&quot; alt=&quot;DJ figure1&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Motivation&lt;/strong&gt;: What are the factors that affect when DJs chooses a song?.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(3).jpeg&quot; alt=&quot;DJ figure3&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Hypothesis&lt;/strong&gt;: Audio Features &amp;amp; Social Network.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(4).jpeg&quot; alt=&quot;DJ figure4&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Dataset&lt;/strong&gt;: &lt;a href=&quot;https://www.1001tracklists.com/&quot;&gt;1001TRACKLISTS&lt;/a&gt;.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(6).jpeg&quot; alt=&quot;DJ figure6&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Popularity&lt;/strong&gt;: Popularity is calculated according to DJ's song preference.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(2).jpeg&quot; alt=&quot;DJ figure2&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Models&lt;/strong&gt;: Popularity / Audio Features, Network Features.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(7).jpeg&quot; alt=&quot;DJ figure7&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Model 1&lt;/strong&gt;: Some audio features affect music popularity.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(9).jpeg&quot; alt=&quot;DJ figure9&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Model 2&lt;/strong&gt;: Song popularity has a negative relationship with Closeness and Betweness.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(10).jpeg&quot; alt=&quot;DJ figure10&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Model 3&lt;/strong&gt;: Even when controlling Audio Features, Closeness and Betweness still show negative relationships.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(11).jpeg&quot; alt=&quot;DJ figure11&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Analysis&lt;/strong&gt;: Low Betweeness &amp;amp; Closeness.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(8).jpg&quot; alt=&quot;DJ figure8&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Analysis&lt;/strong&gt;: DJs tend to play songs composed by DJs within their exclusive groups.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(12).jpeg&quot; alt=&quot;DJ figure12&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;strong&gt;Example&lt;/strong&gt;: The more popular a song is, the more often the song is played within the cluster.
+  &lt;img src=&quot;/assets/images/icmc2016/djs(13).jpeg&quot; alt=&quot;DJ figure13&quot; style=&quot;max-width: 100%;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jongpillee.github.io/assets/images/The%20effect%20of%20DJ's%20social%20networks%20on%20music%20popularity.pdf&quot;&gt;paper&lt;/a&gt; for more info.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 05 Nov 2016 20:40:00 +0900</pubDate>
+        <link>https://jongpillee.github.io///research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html</link>
+        <guid isPermaLink="true">https://jongpillee.github.io///research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html</guid>
+        
+        
+        <category>Research</category>
+        
+        <category>EDM</category>
+        
+        <category>DJs-SocialNetwork</category>
+        
+      </item>
+    
   </channel>
 </rss>
