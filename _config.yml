@@ -20,3 +20,6 @@ github_username: 'jongpillee'
 gmail_username: 'jongpillee.brian'
 
 disqus: jongpilleeblog
+
+plugins_dir: [jekyll-youtube]
+ # This will require each of these gems automatically.
