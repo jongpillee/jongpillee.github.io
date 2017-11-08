@@ -249,7 +249,12 @@ strong {
 
 a.one {color:#337ab7;}
 
-a.two {text-decoration: underline;}
+a.two {
+    text-decoration: underline;
+    font-size: 2.4rem;
+}
+
+
 
 a:hover {
     color: #111;
