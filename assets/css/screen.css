@@ -238,10 +238,12 @@ h6 {
 }
 
 a {
-    color: #337ab7;
+    color: #4A4A4A;
     text-decoration: none;
     transition: color ease 0.3s;
 }
+
+a.one:link {color:#337ab7;}
 
 a:hover {
     color: #111;
@@ -458,7 +460,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
     position: relative;
-    width: 80%;
+    width: 90%;
     max-width: 710px;
     margin: 0 auto;
 }
@@ -488,7 +490,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .main-header .inner {
-    width: 80%;
+    width: 90%;
 }
 
 .main-nav {
