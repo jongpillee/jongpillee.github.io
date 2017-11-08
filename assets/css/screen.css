@@ -221,7 +221,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 h5 {
@@ -245,7 +245,7 @@ p, ul, ol, dl {
     -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-    /*margin: 0 0 1.75em 0;*/
+    margin: 0 0 1.4em 0;
 }
 
 ol, ul {
@@ -1377,7 +1377,7 @@ body:not(.post-template) .post-title {
     }
 
     body:not(.post-template) .post-title {
-        font-size: 3.2rem;
+        font-size: 1.8rem;
     }
 
     hr {
@@ -1402,16 +1402,17 @@ body:not(.post-template) .post-title {
     }
 
     h4 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     h5 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
 
     h6 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
+
 
     .author-profile {
         padding-bottom: 4rem;
@@ -1600,19 +1601,19 @@ body:not(.post-template) .post-title {
     }
 
     h4 {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     h5 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     h6 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     body:not(.post-template) .post-title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .post-template .post {
