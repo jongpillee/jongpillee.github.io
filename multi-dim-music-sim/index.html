@@ -1,1 +1,268 @@
-Disentangled Multidimensional Metric Learning for Music Similarity
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!--<title>Jongpil Lee - Music and Deep Learning Blog</title>-->
+    
+      <title>Jongpil Lee - The Effect of DJs’ Social Network on Music Popularity</title>
+    
+    
+    
+      <meta name="description" content="The Effect of DJs’ Social Network on Music Popularity">
+    
+    
+    <!--<meta name="description" content="Jongpil Lee Blog: Music Information Retrieval, Deep Learning" />-->
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+</head>
+<body class="home-template">
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.9&appId=1775107236113302";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">The Effect of DJs’ Social Network on Music Popularity</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-11-05">05 Nov 2016</time>
+                
+                    on Research, EDM, and DJs-SocialNetwork
+                
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://jongpillee.github.io/">
+                
+                    <span class="blog-title">Jongpil Lee</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2016-11-05">05 Nov 2016</time>
+            
+                on Research, EDM, and DJs-SocialNetwork
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">The Effect of DJs’ Social Network on Music Popularity</h1> -->
+
+        <section class="post-content">
+            <p align="center">
+  <img src="/assets/images/icmc2016/djs(14).jpeg" alt="DJ figure14" style="max-width: 100%;" />
+</p>
+<p>This research focuses on two distinctive determinants of DJ popularity in Electronic Dance Music (EDM) culture. While one’s individual artistic tastes (Audio Features) influence the construction of playlists for festivals, social relationships (Social Network) with other DJs also have an effect on the promotion of a DJ’s works.</p>
+
+<p align="center">
+<strong>Motivation</strong>: There are many aspects that affect when DJs construct Mix Sets.
+  <img src="/assets/images/icmc2016/djs(1).jpeg" alt="DJ figure1" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Motivation</strong>: What are the factors that affect when DJs chooses a song?.
+  <img src="/assets/images/icmc2016/djs(3).jpeg" alt="DJ figure3" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Hypothesis</strong>: Audio Features &amp; Social Network.
+  <img src="/assets/images/icmc2016/djs(4).jpeg" alt="DJ figure4" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Dataset</strong>: <a href="https://www.1001tracklists.com/">1001TRACKLISTS</a>.
+  <img src="/assets/images/icmc2016/djs(6).jpeg" alt="DJ figure6" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Popularity</strong>: Popularity is calculated according to DJ's song preference.
+  <img src="/assets/images/icmc2016/djs(2).jpeg" alt="DJ figure2" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Models</strong>: Popularity / Audio Features, Network Features.
+  <img src="/assets/images/icmc2016/djs(7).jpeg" alt="DJ figure7" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Model 1</strong>: Some audio features affect music popularity.
+  <img src="/assets/images/icmc2016/djs(9).jpeg" alt="DJ figure9" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Model 2</strong>: Song popularity has a negative relationship with Closeness and Betweness.
+  <img src="/assets/images/icmc2016/djs(10).jpeg" alt="DJ figure10" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Model 3</strong>: Even when controlling Audio Features, Closeness and Betweness still show negative relationships.
+  <img src="/assets/images/icmc2016/djs(11).jpeg" alt="DJ figure11" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Analysis</strong>: Low Betweeness &amp; Closeness.
+  <img src="/assets/images/icmc2016/djs(8).jpg" alt="DJ figure8" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Analysis</strong>: DJs tend to play songs composed by DJs within their exclusive groups.
+  <img src="/assets/images/icmc2016/djs(12).jpeg" alt="DJ figure12" style="max-width: 100%;" />
+</p>
+
+<p align="center">
+<strong>Example</strong>: The more popular a song is, the more often the song is played within the cluster.
+  <img src="/assets/images/icmc2016/djs(13).jpeg" alt="DJ figure13" style="max-width: 100%;" />
+</p>
+
+<p>Check out the <a href="https://jongpillee.github.io/assets/images/The%20effect%20of%20DJ's%20social%20networks%20on%20music%20popularity.pdf">paper</a> for more info.</p>
+
+
+        </section>
+
+        
+
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            
+                <figure class="author-image">
+                    <a class="img" href="/" style="background-image: url(/assets/images/profile.png)">
+                    <span class="hidden">Jongpil Lee's Picture</span></a>
+                </figure>
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4> Jongpil Lee </h4>
+                    <!-- Author Bio -->
+                    <p>
+                        Music Enthusiast
+                    </p>
+                </section>
+            
+
+            <!-- Share links section -->
+            <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=The Effect of DJs’ Social Network on Music Popularity&amp;url=https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+
+            <!-- Disqus comments -->
+            <!--
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function () {
+        this.page.url = "https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "jongpilleeblog"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    var disqus_shortname = 'jongpilleeblog';
+
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'disqus_shortname' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</section>
+
+
+            -->
+            
+            <div class="fb-comments" data-href="https://jongpillee.github.io/" data-width="100%" data-numposts="5"></div>
+            
+
+            <!-- contacts -->
+            
+
+        </footer>
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="/">Jongpil Lee</a> &copy; 
+               &bull; All rights reserved.
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+    <!-- Google Analytics Tracking code -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+
+    </script>   
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101334039-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
