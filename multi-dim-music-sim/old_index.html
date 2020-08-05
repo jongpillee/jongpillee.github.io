@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!--<title>Jongpil Lee - Music and Deep Learning Blog</title>-->
+    
+      <title>Jongpil Lee - dim-sim</title>
+    
+    
+    
+      <meta name="description" content="dim-sim">
+    
+    
+    <!--<meta name="description" content="Jongpil Lee Blog: Music Information Retrieval, Deep Learning" />-->
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+</head>
+<body class="home-template">
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.9&appId=1775107236113302";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Dim-Sim Dataset</h1>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://jongpillee.github.io/">
+                
+                    <span class="blog-title">Jongpil Lee</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2016-11-05">05 Nov 2016</time>
+            
+                on Research, EDM, and DJs-SocialNetwork
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">The Effect of DJs’ Social Network on Music Popularity</h1> -->
+
+        <section class="post-content">
+            <p align="center">
+  <img src="/assets/images/dim-sim.png" alt="dim-sim" style="max-width: 60%;" />
+</p>
+
+<p>The <strong>dim-sim</strong> dataset is a collection of user-annotated music similarity triplet ratings used to evaluate music similarity search and related algorithms. Our similarity ratings are linked to the <a href="http://millionsongdataset.com", target="_blank">Million Song Dataset (MSD)</a> and were collected for the following paper:</p>
+<pre><code><span class="hljs-keyword"><a href="https://ieeexplore.ieee.org/document/9053442/", target="_blank">Disentangled Multidimensional Metric Learning for Music Similarity</a></span>
+Jongpil Lee, Nicholas J. Bryan, Justin Salamon, Zeyu Jin, and Juhan Nam.
+Proceedings of the International Conference on Acoustics, Speech, and Signal Processing (ICASSP). IEEE, 2020.
+</code></pre>
+
+<p><strong>About</strong></p>
+<p>To collect our data, we randomly sampled 4,000 3-second triplets (i.e., anchor, song 1, song 2) from the <a href="http://millionsongdataset.com", target="_blank">MSD</a> and asked people to annotate which track sounded more similar to the anchor (i.e., song 1 or song 2). Each triplet was annotated by 5-12 people, resulting in 39,440 raw human annotations. We then calculated the annotator agreement per triplet, defined as the ratio between the majority vote and total number of annotations, and filtered out triplets where the agreement was below 0.9, to create 879 high-agreement cleaned, human-annotated triplets. We have released both the raw and clean versions of the dataset in multiple formats discussed below.</p>
+
+
+<p><strong>Download</strong></p>
+<p>The dataset can be downloaded from the zenodo link: <a href="https://zenodo.org/record/3889149#.XuovcxMzbyV", target="_blank", style="color:#0066CC">https://zenodo.org/record/3889149#.XuovcxMzbyV</a>.</p>
+
+
+
+<p><strong>Formats</strong></p>
+<p>We have released both <a href="https://en.wikipedia.org/wiki/Comma-separated_values", target="_blank">CSV</a> and <a href="https://www.json.org", target="_blank">JSON</a> versions of the data for both the raw (<code>raw-dim-sim</code>) and clean (<code>clean-dim-sim</code>) annotations as described above. For a given triplet rating, the following data is provided:</p>
+<pre><code><span class="hljs-attribute">triplet_id</span>    
+anchor_id    
+anchor_start_seconds    
+anchor_start_samples    
+song1_id    
+song1_start_seconds    
+song1_start_samples    
+song2_id    
+song2_start_seconds    
+song2_start_samples    
+sampling_rate    
+clip_lengths_seconds    
+clip_lengths_samples    
+song1_vote    
+song2_vote
+</code></pre><p>For the raw versions, <code>song1_vote</code> and <code>song2_vote</code> correspond to the total number of users that voted for the each song respectively. For the clean versions, the values of <code>song1_vote</code> and <code>song2_vote</code> are set to 0 or 1. All clips used were exactly 3 seconds long. The <code>triplet_id</code>, <code>song1_id</code>, and <code>song2_id</code> denote the corresponding MSD track ID.</p>
+
+<p><strong>License</strong></p>
+<p>The <strong>dim-sim</strong> dataset is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/", target="_blank">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>.</p>
+
+<p><strong>Acknowledgement</strong></p>
+<p>When <strong>dim-sim</strong> is used for academic research, we would highly appreciate it if scientific publications of works partly based on the <strong>dim-sim</strong> dataset cite the following publication:</p>
+
+
+<pre><code>@inproceedings{Lee2019MusicSimilarity,
+ title={<span class="hljs-keyword">Disentangled </span><span class="hljs-keyword">Multidimensional </span>Metric Learning For Music Similarity},
+ author={Lee, <span class="hljs-keyword">Jongpil </span><span class="hljs-keyword">and </span><span class="hljs-keyword">Bryan, </span>Nicholas <span class="hljs-keyword">J. </span><span class="hljs-keyword">and </span>Salamon, <span class="hljs-keyword">Justin </span><span class="hljs-keyword">and </span><span class="hljs-keyword">Jin, </span>Zeyu, <span class="hljs-keyword">and </span>Nam, <span class="hljs-keyword">Juhan},
+</span> <span class="hljs-keyword">booktitle={Proceedings </span>of the International Conference on Acoustics, Speech <span class="hljs-keyword">and </span>Signal Processing (ICASSP)},
+ year={<span class="hljs-number">2020</span>},
+ <span class="hljs-keyword">organization={IEEE}
+</span>}
+</code></pre>
+
+
+
+
+<p>Check out the <a href="https://jongpillee.github.io/assets/images/icassp2020_music_sim.pdf">paper</a> for more info.</p>
+
+
+        </section>
+
+        
+
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            
+                <figure class="author-image">
+                    <a class="img" href="/" style="background-image: url(/assets/images/profile.png)">
+                    <span class="hidden">Jongpil Lee's Picture</span></a>
+                </figure>
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4> Jongpil Lee </h4>
+                    <!-- Author Bio -->
+                    <p>
+                        Music Enthusiast
+                    </p>
+                </section>
+            
+
+            <!-- Share links section -->
+            <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=The Effect of DJs’ Social Network on Music Popularity&amp;url=https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+
+            <!-- Disqus comments -->
+            <!--
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function () {
+        this.page.url = "https://jongpillee.github.io//research/edm/djs-socialnetwork/2016/11/05/The-Effect-of-DJs-Social-Network-on-Music-Popularity.html";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "jongpilleeblog"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    var disqus_shortname = 'jongpilleeblog';
+
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'disqus_shortname' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</section>
+
+
+            -->
+            
+            <div class="fb-comments" data-href="https://jongpillee.github.io/" data-width="100%" data-numposts="5"></div>
+            
+
+            <!-- contacts -->
+            
+
+        </footer>
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="/">Jongpil Lee</a> &copy; 
+               &bull; All rights reserved.
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+    <!-- Google Analytics Tracking code -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+
+    </script>   
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101334039-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
